@@ -1,19 +1,19 @@
 theo-example
 ============
 
-Example project for how to use [theo](https://github.com/salesforce-ux/theo)
+Example project for how to use [theo](https://github.com/salesforce-ux/theo).
 
 ## Dependencies
 
 Upfront you'll need to install [nodejs](http://nodejs.org) and Gulp:
 
-    $ npm install -g gulp
+    $ sudo npm install -g gulp
 
 ## Setup
 
-  $ git clone https://github.com/salesforce-ux/theo-example.git
-  $ cd theo-example
-  $ npm install .
+    $ git clone https://github.com/salesforce-ux/theo-example.git
+    $ cd theo-example
+    $ npm install .
 
 Open the `./www/index.html` and `./www/example.html`.
 
