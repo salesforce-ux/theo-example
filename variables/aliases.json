@@ -1,0 +1,48 @@
+{
+  "aliases": [
+    {
+      "name": "PORCELAIN",
+      "value": "#f5f6f7"
+    },
+    {
+      "name": "PALE_ROYAL_BLUE",
+      "value": "#F0F1F2"
+    },
+    {
+      "name": "GEYSER",
+      "value": "#DADEE2"
+    },
+    {
+      "name": "CASPER",
+      "value": "#9FAAB5"
+    },
+    {
+      "name": "REGENT_GREY",
+      "value": "#8595A6"
+    },
+    {
+      "name": "SLATE_GREY",
+      "value": "#66788A"
+    },
+    {
+      "name": "NEVADA",
+      "value": "#686C70"
+    },
+    {
+      "name": "BLUE_BAYOUX",
+      "value": "#485C70"
+    },
+    {
+      "name": "GREY_ROYAL_BLUE",
+      "value": "#34495E"
+    },
+    {
+      "name": "DARK_GREY_ROYAL_BLUE",
+      "value": "#2A4158"
+    },
+    {
+      "name": "ROLLING_STONE",
+      "value": "#525354"
+    }
+  ]
+}
