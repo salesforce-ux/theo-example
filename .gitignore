@@ -1,4 +1,4 @@
-generated
+.generated
+.www
 node_modules
-www
 npm-debug.log

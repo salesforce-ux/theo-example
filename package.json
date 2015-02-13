@@ -1,20 +1,23 @@
 {
   "name": "theo-example",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Example on how to develop a design system using theo.",
   "dependencies": {
-    "express": "^4.6.1",
-    "connect-livereload": "^0.4.0",
-    "theo": "^0.1.14",
-    "gulp": "^3.8.6",
-    "gulp-rimraf": "^0.1.0",
-    "gulp-livereload": "^2.1.0",
-    "gulp-util": "^2.2.20",
+    "express": "^4.11.2",
+    "connect-livereload": "^0.5.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "2.1.0",
+    "gulp-livereload": "^3.7.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-util": "^3.0.3",
     "open": "0.0.5",
-    "gulp-autoprefixer": "0.0.8",
-    "gulp-sass": "^0.7.2"
+    "rimraf": "^2.2.8",
+    "run-sequence": "^1.0.2",
+    "theo": "^3.0.3"
   },
   "scripts": {
-    "postinstall": "./postinstall.sh"
+    "dev": "gulp dev"
   }
 }

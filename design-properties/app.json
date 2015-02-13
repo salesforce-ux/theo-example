@@ -1,0 +1,17 @@
+{
+  "imports": [
+    "./aliases.json",
+    "./border.json",
+    "./font.json",
+    "./spacing.json",
+    "./text.json"
+  ],
+  "props": {
+    "COLOR_BRAND": {
+      "value": "{!CASPER}",
+      "type": "color",
+      "category": "background-color",
+      "comment": "Some comment about how to use it."
+    }
+  }
+}

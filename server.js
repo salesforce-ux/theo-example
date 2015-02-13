@@ -1,17 +1,17 @@
-(function() {
+var express = require('express');
+var app = express();
 
-  var express = require('express');
-  var app = express();
+app.set('port', process.env.PORT || 3000);
 
-  app.set('port', process.env.PORT || 3000);
+app.use(require('connect-livereload')({
+  port: 35729
+}));
 
-  app.use(require('connect-livereload')());
-  
-  app.use(express["static"]("./www"));
-  var port = app.get('port');
-  app.listen(port);
-  module.exports = app;
+app.use(express['static']('./.www'));
+app.use('/generated', express['static']('./.generated'));
 
-  console.log('listening on ' + port);
+var port = app.get('port');
 
-}).call(this);
+app.listen(port, function() {
+  console.log('Express app started on port ' + port);
+});

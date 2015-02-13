@@ -1,34 +1,25 @@
-theo-example
-============
+# Theo Example
 
-Example project for how to use [theo](https://github.com/salesforce-ux/theo).
-
-## Dependencies
-
-Upfront you'll need to install [nodejs](http://nodejs.org) and Gulp:
-
-    $ sudo npm install -g gulp
+Example project for integrating Design Properties using [theo](https://github.com/salesforce-ux/theo).
 
 ## Setup
 
-    $ git clone https://github.com/salesforce-ux/theo-example.git
-    $ cd theo-example
-    $ npm install .
+```bash
+$ git clone https://github.com/salesforce-ux/theo-example.git
+$ cd theo-example
+$ npm install
+```
 
-Open the `./www/index.html` and `./www/example.html`.
+## Development
 
-## Develop
-
-While developing your website or variables run:
-
-    $ gulp dev
-
-It's kicks of a local webserver with LiveReload.
-Open Chrome with the [LiveReload plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) installed and point to [localhost:3000](http://localhost:3000).
+While developing your website or Design Properties use `npm run dev` 
+and then open [localhost:3000]().
 
 Now you can start editing your `src/index.html` and `src/sass/main.scss`.
 
-To see the generated docs for your variables go to [localhost:3000/example.html](http://localhost:3000/example.html).
-Note: You can change your variables in `./variables/example.json` or the `./variables/aliases.json` and see live changes to the docs.
+To see the generated docs for your variables go to [localhost:3000/generated/app.html]().
+Note: You can change your variables in `./variables/app.json` or
+the `./variables/aliases.json` and see live changes to the docs.
 
-Further if you open [localhost:3000](http://localhost:3000) and change the variables the changes are reflected live as well.
+Further if you open [localhost:3000]() and change the variables,
+the updates are reflected live.

@@ -1,0 +1,29 @@
+{
+  "global": {
+    "type": "size",
+    "category": "font-size"
+  },
+  "props": {
+    "FONT_SIZE_XX_SMALL": {
+      "value": "10px"
+    },
+    "FONT_SIZE_X_SMALL": {
+      "value": "13px"
+    },
+    "FONT_SIZE_SMALL": {
+      "value": "14px"
+    },
+    "FONT_SIZE_MEDIUM": {
+      "value": "15px"
+    },
+    "FONT_SIZE_LARGE": {
+      "value": "16px"
+    },
+    "FONT_SIZE_X_LARGE": {
+      "value": "18px"
+    },
+    "FONT_SIZE_XX_LARGE": {
+      "value": "22px"
+    }
+  }
+}

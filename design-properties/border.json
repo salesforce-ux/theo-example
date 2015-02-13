@@ -1,0 +1,37 @@
+{
+  "imports": [
+    "./aliases.json"
+  ],
+  "props": {
+    "BORDER_RADIUS_SMALL": {
+      "value": "3px",
+      "type": "size",
+      "category": "radius"
+    },
+    "BORDER_RADIUS_MEDIUM": {
+      "value": "5px",
+      "type": "size",
+      "category": "radius"
+    },
+    "BORDER_RADIUS_LARGE": {
+      "value": "8px",
+      "type": "size",
+      "category": "radius"
+    },
+    "BORDER_RADIUS_CIRCLE": {
+      "value": "50%",
+      "type": "size",
+      "category": "radius"
+    },
+    "COLOR_BORDER_SEPARATOR": {
+      "value": "{!PORCELAIN}",
+      "type": "color",
+      "category": "hr-color"
+    },
+    "COLOR_BORDER": {
+      "value": "{!PORCELAIN}",
+      "type": "color",
+      "category": "border-color"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "global": {
+    "type": "color",
+    "category": "text-color"
+  },
+  "imports": [
+    "./aliases.json"
+  ],
+  "props": {
+    "COLOR_TEXT": {
+      "value": "{!NEVADA}"
+    },
+    "COLOR_TEXT_ALT": {
+      "value": "{!BLUE_BAYOUX}"
+    }
+  }
+}
