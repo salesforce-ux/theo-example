@@ -17,9 +17,9 @@ and then open [localhost:3000]().
 
 Now you can start editing your `src/index.html` and `src/sass/main.scss`.
 
-To see the generated docs for your variables go to [localhost:3000/generated/app.html]().
-Note: You can change your variables in `./variables/app.json` or
-the `./variables/aliases.json` and see live changes to the docs.
+To see the generated docs for your design-properties go to [localhost:3000/generated/app.html]().
+Note: You can change your design-properties in `./design-properties/app.json` or
+the `./design-properties/aliases.json` and see live changes to the docs.
 
-Further if you open [localhost:3000]() and change the variables,
+Further if you open [localhost:3000]() and change the design-properties,
 the updates are reflected live.
