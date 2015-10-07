@@ -15,7 +15,7 @@
     "open": "0.0.5",
     "rimraf": "^2.2.8",
     "run-sequence": "^1.0.2",
-    "theo": "^3.0.3"
+    "theo": "^4.2.0"
   },
   "scripts": {
     "dev": "gulp dev"
