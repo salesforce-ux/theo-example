@@ -1,8 +1,8 @@
 {
   "name": "theo-example",
   "version": "1.0.0",
-  "description": "Example on how to develop a design system using theo.",
-  "devDependencies": {
+  "description": "Example on how to develop a design system using Theo.",
+  "dependencies": {
     "connect-livereload": "^0.6.0",
     "del": "^2.2.2",
     "express": "^4.14.0",
