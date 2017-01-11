@@ -13,6 +13,7 @@
     "theo": "^5.0.0-rc.7"
   },
   "scripts": {
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "prestart": "gulp"
   }
 }
