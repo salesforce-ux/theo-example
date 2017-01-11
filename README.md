@@ -1,6 +1,6 @@
 # Theo Example
 
-Example project for integrating Design Properties using [theo](https://github.com/salesforce-ux/theo).
+Example project for integrating Design Tokens using [theo](https://github.com/salesforce-ux/theo).
 
 ## Setup
 
@@ -12,14 +12,14 @@ $ npm install
 
 ## Development
 
-While developing your website or Design Properties use `npm run dev` 
-and then open [localhost:3000]().
+While developing your website or Design Tokens use `npm run dev`
+and then open [localhost:3000](http://localhost:3000).
 
-Now you can start editing your `src/index.html` and `src/sass/main.scss`.
+Now you can start editing your `src/index.html` and `src/styles/main.scss`.
 
-To see the generated docs for your design-properties go to [localhost:3000/generated/app.html]().
-Note: You can change your design-properties in `./design-properties/app.json` or
-the `./design-properties/aliases.json` and see live changes to the docs.
+To see the generated docs for your Design Tokens go to [localhost:3000/generated/app.html](http://localhost:3000/generated/app.html).
+Note: You can change your Design Tokens in `./design-tokens/app.json` or
+the `./design-tokens/aliases.json` and see live changes to the docs.
 
-Further if you open [localhost:3000]() and change the design-properties,
+Further if you open [localhost:3000](http://localhost:3000) and change the Design Tokens,
 the updates are reflected live.

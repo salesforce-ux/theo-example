@@ -1,106 +1,85 @@
-var fs = require('fs');
-var path = require('path');
+const fs = require('fs')
+const path = require('path')
 
-var runSequence = require('run-sequence');
-var rimraf = require('rimraf');
+const runSequence = require('run-sequence')
+const del = require('del')
 
-var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
-var gutil = require('gulp-util');
-var sass = require('gulp-sass');
-var livereload = require('gulp-livereload');
+const gulp = require('gulp')
+const sass = require('gulp-sass')
+const livereload = require('gulp-livereload')
 
-var theo = require('theo');
+const theo = require('theo')
 
 ////////////////////////////////////////////////////////////////////
 // Paths
 ////////////////////////////////////////////////////////////////////
 
-var paths = {
-  designProperties: './design-properties',
+const paths = {
+  designTokens: './design-tokens',
   generated: './.generated',
-  output: './.www',
-  sass: './src/sass'
-};
-
-function getPath(p) {
-  return path.resolve(__dirname, p);
-}
-
-////////////////////////////////////////////////////////////////////
-// Helpers
-////////////////////////////////////////////////////////////////////
-
-function clean(p) {
-  return function(done) {
-    rimraf.sync(getPath(p));
-    done();
-  }
+  output: './.www'
 }
 
 ////////////////////////////////////////////////////////////////////
 // Tasks - Clean
 ////////////////////////////////////////////////////////////////////
 
-gulp.task('clean:generated', clean(paths.generated))
-gulp.task('clean:output', clean(paths.output))
-gulp.task('clean', ['clean:generated', 'clean:output']);
+gulp.task('clean', () => del([paths.generated, paths.output]))
 
 ////////////////////////////////////////////////////////////////////
-// Tasks - Design Properties
+// Tasks - Design Tokens
 ////////////////////////////////////////////////////////////////////
 
-gulp.task('design-properties', ['styleguide'], function () {
-  return gulp.src('./design-properties/app.json')
+gulp.task('design-tokens', ['styleguide'], () =>
+  gulp.src('./design-tokens/app.json')
     .pipe(theo.plugins.transform('web'))
     .pipe(theo.plugins.format('scss'))
-    .pipe(gulp.dest(paths.generated));
-});
+    .pipe(gulp.dest(paths.generated))
+)
 
-gulp.task('styleguide', function () {
-  return gulp.src('./design-properties/app.json')
+gulp.task('styleguide', () =>
+  gulp.src('./design-tokens/app.json')
     .pipe(theo.plugins.transform('web'))
     .pipe(theo.plugins.format('html'))
     .pipe(gulp.dest(paths.generated))
-    .pipe(livereload());
-});
+    .pipe(livereload())
+)
 
 ////////////////////////////////////////////////////////////////////
 // Tasks - Site
 ////////////////////////////////////////////////////////////////////
 
-gulp.task('styles', ['design-properties'], function () {
-  return gulp.src(getPath('src/styles/**/*.scss'))
+gulp.task('styles', ['design-tokens'], () =>
+  gulp.src('src/styles/**/*.scss')
     .pipe(sass())
-    .pipe(autoprefixer())
     .pipe(gulp.dest(paths.output))
-    .pipe(livereload());
-});
+    .pipe(livereload())
+)
 
-gulp.task('html', function () {
-  return gulp.src(getPath('src/index.html'))
+gulp.task('html', () =>
+  gulp.src('src/index.html')
     .pipe(gulp.dest(paths.output))
-    .pipe(livereload());
-});
+    .pipe(livereload())
+)
 
 ////////////////////////////////////////////////////////////////////
 // Tasks - Watch
 ////////////////////////////////////////////////////////////////////
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
   livereload.listen({
     port: 35729
-  });
-  gulp.watch(getPath('design-properties/**/*.json'), ['styles']);
-  gulp.watch(getPath('src/**/*.scss'), ['styles']);
-  gulp.watch(getPath('src/**/*.html'), ['html']);
-});
+  })
+  gulp.watch('design-tokens/**/*.json', ['styles'])
+  gulp.watch('src/**/*.scss', ['styles'])
+  gulp.watch('src/**/*.html', ['html'])
+})
 
-gulp.task('dev', ['default'], function() {
-  require('./server');
-  gulp.start('watch');
-});
+gulp.task('dev', ['default'], () => {
+  require('./server')
+  gulp.start('watch')
+})
 
-gulp.task('default', function(done) {
-  runSequence('clean', ['styleguide', 'styles', 'html'], done);
-});
+gulp.task('default', (done) =>
+  runSequence('clean', ['styleguide', 'styles', 'html'], done)
+)
