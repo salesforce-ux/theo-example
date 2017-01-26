@@ -10,7 +10,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^3.1.0",
     "run-sequence": "^1.2.2",
-    "theo": "^5.0.0-rc.7"
+    "theo": "^5.0.0"
   },
   "scripts": {
     "dev": "gulp dev",
