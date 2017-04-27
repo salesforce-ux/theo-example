@@ -2,6 +2,7 @@
   "name": "theo-example",
   "version": "1.0.0",
   "description": "Example on how to develop a design system using Theo.",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "connect-livereload": "^0.6.0",
     "del": "^2.2.2",
