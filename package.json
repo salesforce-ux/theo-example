@@ -11,7 +11,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^3.1.0",
     "run-sequence": "^1.2.2",
-    "theo": "^5.0.0"
+    "gulp-theo": "^1.0.0-alpha"
   },
   "scripts": {
     "dev": "gulp dev",
