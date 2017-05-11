@@ -1,4 +1,4 @@
-# Theo Example [![Greenkeeper badge](https://badges.greenkeeper.io/salesforce-ux/theo-example.svg)](https://greenkeeper.io/)
+# Theo Example
 
 Example project for integrating Design Tokens using [theo](https://github.com/salesforce-ux/theo).
 
