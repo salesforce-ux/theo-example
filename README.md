@@ -7,12 +7,12 @@ Example project for integrating Design Tokens using [theo](https://github.com/sa
 ```bash
 $ git clone https://github.com/salesforce-ux/theo-example.git
 $ cd theo-example
-$ npm install
+$ yarn install
 ```
 
 ## Development
 
-While developing your website or Design Tokens use `npm run dev`
+While developing your website or Design Tokens use `yarn dev`
 and then open [localhost:3000](http://localhost:3000).
 
 Now you can start editing your `src/index.html` and `src/styles/main.scss`.
