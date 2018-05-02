@@ -5,13 +5,14 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "connect-livereload": "^0.6.0",
-    "del": "^2.2.2",
-    "express": "^4.14.0",
+    "del": "^3.0.0",
+    "express": "^4.16.3",
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^3.1.0",
-    "run-sequence": "^1.2.2",
-    "theo": "^5.0.0"
+    "gulp-sass": "^4.0.1",
+    "gulp-theo": "^1.0.0",
+    "run-sequence": "^2.2.1",
+    "theo": "^7.0.1"
   },
   "scripts": {
     "dev": "gulp dev",
